@@ -4,8 +4,11 @@ import viteCompression from "vite-plugin-compression";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), viteCompression({
-    verbose: true,
-    algorithm: 'brotliCompress',
-  })],
+	plugins: [
+		vue(),
+		viteCompression({
+			verbose: true,
+			algorithm: "brotliCompress",
+		}),
+	],
 });
