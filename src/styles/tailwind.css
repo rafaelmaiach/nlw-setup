@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.square {
+	@apply h-4 w-4 rounded border;
+}
+
+.zinc-800 {
+	@apply border-zinc-800 bg-zinc-900;
+}
+
+.violet-700 {
+	@apply border-violet-700 bg-violet-900;
+}
+
+.violet-600 {
+	@apply border-violet-600 bg-violet-800;
+}
+
+.violet-500 {
+	@apply border-violet-500 bg-violet-700;
+}
+
+.violet-400 {
+	@apply border-violet-400 bg-violet-600;
+}
+
+.violet-300 {
+	@apply border-violet-300 bg-violet-500;
+}
