@@ -1,19 +1,11 @@
 <template>
-	<div class="flex w-[720px] items-center justify-between px-36 pb-16">
-		<div class="flex flex-col">
-			<TrackerHeaderColors />
-			<span class="text-5xl font-extrabold">habits</span>
-		</div>
-		<button
-			class="flex cursor-pointer items-center rounded-lg border border-violet-500 px-5 py-4 font-semibold"
-		>
-			<IconPlus class="mr-3" />
-			<span>New habit</span>
-		</button>
+	<div class="flex w-[720px] items-center justify-between mx-36 mb-16">
+		<TrackerHeaderLogo />
+		<TrackerHeaderNewHabit />
 	</div>
 </template>
 
 <script setup>
-	import TrackerHeaderColors from "./TrackerHeaderColors.vue";
-	import IconPlus from "../../assets/icons/IconPlus.vue";
+	import TrackerHeaderLogo from "./TrackerHeaderLogo.vue";
+	import TrackerHeaderNewHabit from "./TrackerHeaderNewHabit.vue";
 </script>
