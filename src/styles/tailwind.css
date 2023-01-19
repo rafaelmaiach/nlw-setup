@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.square {
+.square-small {
 	@apply h-4 w-4 rounded border;
+}
+
+.square-big {
+	@apply h-10 w-10 rounded border;
 }
 
 .zinc-800 {
