@@ -6,16 +6,23 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts",
+		"lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix"
   },
   "dependencies": {
     "date-fns": "^2.29.3",
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@types/node": "^18.11.18",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
+    "eslint": "^8.32.0",
+    "eslint-plugin-vue": "^9.9.0",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^10.2.0",
